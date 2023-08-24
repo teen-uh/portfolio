@@ -1,111 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>tina's homepage</title>
-    <link rel="stylesheet" href="style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="bear.svg" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;1,100&display=swap"
-      rel="stylesheet"
+      rel="icon"
+      href="https://cdn.glitch.global/d747b91a-0e7f-43da-9c0d-17dcc8b03d3a/favicon-w.ico?v=1652559992914"
     />
+    <link rel="stylesheet" href="https://use.typekit.net/rcy6ivr.css" />
+
+    <title>Tina Shi</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="css/swiper.css" />
+    <script src="js/swiper.js"></script>
+    <script src="js/index.js"></script>
   </head>
-
   <body>
-    <div>
-      <!-- <h1 class="bottom-container">tina shi</h1> -->
-      
-      <!-- <h1 class="top-container">tina shi</h1> -->
-    </div>
-    <div>
-      <h1 class="title">tina shi</h1>
-      <p>This is my website for <i>IML300</i>. A little bit about me.</p>
-    </div>
+    <!--     <div id="invertedcursor"></div> -->
+    <div class="sidebar">
+    
 
-    <!-- <div class="circle"></div> -->
-
-    <div>
-      <h1>presentation</h1>
-      <br />
-      <a
-        href="https://docs.google.com/presentation/d/1J5Jhq1WjsqDg_tYk-eqS_3M8RHTVW8B5ZoMzEELFHaY/edit?usp=sharing"
-        >pecha kucha: Lauren McCarthy</a
-      >
-      <h1>projects</h1>
-      <h2>project 1: HyperNarrative</h2>
-      <a href="https://github.com/teen-uh/iml300/tree/main/project-1#readme"
-        >Concept</a
-      ><br />
-      <a href="project-1/index.html">Final: Nonnomadic</a>
-      <h2>project 2: Algorithmic Pattern and Sound</h2>
-      <a href="project-2.html">Concept</a><br />
-      <a href="https://editor.p5js.org/tyshi/sketches/9LppfnJSk">Final: Musical Houses</a>
-      <h2>project 3: Networked Justice</h2>
-      <a href="https://dumpling.glitch.me/">Final: Memories of Dumplings</a>
-      <h1>exercises</h1>
-      <div class="grid-container">
-      <div class="grid-item">
-        <a href="https://editor.p5js.org/tyshi/sketches/PbAhP8RCM"
-          >p5.js exercise 1</a
-        ><br />
-        <iframe src="https://preview.p5js.org/tyshi/embed/PbAhP8RCM"></iframe>
-      </div>
-      <div class="grid-container">
-      <div class="grid-item">
-        <a href="https://editor.p5js.org/tyshi/sketches/CUVZzpm_J"
-          >p5.js exercise 2</a
-        ><br />
-        <iframe src="https://preview.p5js.org/tyshi/embed/CUVZzpm_J"></iframe>
-      </div>
-      <div class="grid-container">
-      <div class="grid-item">
-        <a href="https://editor.p5js.org/tyshi/sketches/dSExE3UHp"
-          >p5.js exercise 3a</a
-        ><br />
-        <iframe src="https://preview.p5js.org/tyshi/embed/dSExE3UHp"></iframe>
-      </div>
-    </div>
-    <div class="grid-container">
-      <div class="grid-item">
-        <a href="https://editor.p5js.org/tyshi/sketches/2n4vX8txh"
-          >p5.js exercise 3b</a
-        ><br />
-        <iframe src="https://preview.p5js.org/tyshi/embed/2n4vX8txh"></iframe>
-      </div>
-    </div>
-    <div class="grid-container">
-      <div class="grid-item">
-        <a href="https://editor.p5js.org/tyshi/sketches/HERcWl38f"
-          >p5.js exercise 4</a
-        ><br />
-        <iframe src="https://preview.p5js.org/tyshi/embed/HERcWl38f"></iframe>
-      </div>
-    </div>
-    <div class="grid-container">
-      <div class="grid-item">
-        <a href="https://editor.p5js.org/tyshi/sketches/_oxgG_rGB"
-          >p5.js exercise 5</a
-        ><br />
-        <iframe src="https://preview.p5js.org/tyshi/embed/_oxgG_rGB"></iframe>
-      </div>
-    </div>
-    <div class="grid-container">
-      <div class="grid-item">
-        <a href="https://editor.p5js.org/tyshi/sketches/d6j4NlkRC"
-          >p5.js exercise 6</a
-        ><br />
-        <iframe src="https://preview.p5js.org/tyshi/embed/d6j4NlkRC"></iframe>
+  
+<label for="drop" class="toggle"><img
+              src="https://cdn.glitch.global/d747b91a-0e7f-43da-9c0d-17dcc8b03d3a/bearhead.png?v=1652232371510"
+              class="main-logo"
+            /></label>
+      <input type="checkbox" id="drop" />
+      <div class="sidebar-text">
+       
+        <ul class="dropdown-menu dropdown-menu--animated">
+          <li><a href="works.html" class="dropdown-link">Works</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
       </div>
     </div>
 
-    <!--add a h1 element called 'Thoughts' Below-->
-    <div>
-      <h1>thoughts</h1>
-      <a href="readings.html">readings</a>
+    <div class="main home swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="section0">
+          <a href="#" class="home-a" data-swiper-parallax="-400"
+            >Project Name</a
+          >
+          <p class="home-p" data-swiper-parallax="-1200">
+            This is a description about Project Name. <br />
+            A project made with this medium that discusses this topic in
+            relation to these perspectives.
+          </p>
+        </div>
+        <div class="swiper-slide" id="section1">
+          <a href="#" class="home-a" data-swiper-parallax="-400"
+            >Project Name</a
+          >
+          <p class="home-p" data-swiper-parallax="-1200">
+            This is a description about Project Name. <br />
+            A project made with this medium that discusses this topic in
+            relation to these perspectives.
+          </p>
+        </div>
+        <div class="swiper-slide" id="section2">
+          <a href="#" class="home-a" data-swiper-parallax="-400"
+            >Project Name</a
+          >
+          <p class="home-p" data-swiper-parallax="-1200">
+            This is a description about Project Name. <br />
+            A project made with this medium that discusses this topic in
+            relation to these perspectives.
+          </p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
 
-    <footer>fall, 2021.</footer>
+    <div class="mobile-footer">
+      <p>
+        Thanks for viewing! &nbsp; Learn more <a href="about.html">about me</a>.
+      </p>
+    </div>
+    
+    <div class="mobile-landscape">
+      <p>
+        Please rotate your device. 
+      </p>
+    </div>
+
+    <script>
+      function myFunction(x) {
+        if (x.matches) {
+          // If media query matches
+          var swiper = new Swiper(".swiper", {
+            direction: "horizontal",
+            loop: true,
+            parallax: true,
+            mousewheel: true,
+            touchStartPreventDefault: false,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        } else {
+          var swiper = new Swiper(".swiper", {
+            direction: "vertical",
+            loop: true,
+            parallax: true,
+            mousewheel: true,
+            touchStartPreventDefault: false,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        }
+      }
+
+      var x = window.matchMedia("(max-width: 600px)");
+      myFunction(x); // Call listener function at run time
+      x.addListener(myFunction); // Attach listener function on state changes
+    </script>
   </body>
 </html>

@@ -1,0 +1,263 @@
+nav .items {
+  display: flex;
+  /*   justify-content: space-between; */
+}
+
+
+nav .items .active,
+nav .items .item:hover {
+  color: white;
+  background: black;
+}
+
+.gallery {
+  display: flex;
+  margin-left: 1vw;
+  margin-right: 4vw;
+  flex-wrap: wrap;
+}
+.gallery .mod {
+  width: 23%;
+  /*   padding: 0.5vw; */
+  margin-right: 2%;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: black;
+}
+
+.gallery .mod.hide {
+  transition: opacity 200ms;
+  opacity: 0;
+  display: none;
+}
+
+@keyframes animate {
+  0% {
+    transform: opacity(0);
+  }
+  100% {
+    transform: opacity(1);
+  }
+}
+
+.gallery .mod.show {
+  display: block;
+  transition: opacity 200ms;
+  opacity: 1;
+}
+
+.gallery .mod span {
+  display: flex;
+  width: 100%;
+}
+
+.gallery .mod img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mod-text {
+  font-weight: 400;
+  margin: 1vw;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin-top: 5%;
+}
+
+.label {
+  color: grey;
+  margin-bottom: 5%;
+}
+
+/* MONITOR */
+@media only screen and (min-width: 1200px) {
+  .works nav {
+    margin: 4vw 4vw 3vw 1vw;
+  }
+
+  nav .items .item {
+    padding: 0.3% 0.8% 0.3% 0.8%;
+    line-height: 1vw;
+    font-size: 0.9vw;
+    font-weight: 400;
+    margin: 0 1.2vw 0 0;
+    border: 1.5px solid #000000;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+}
+/* LAPTOP */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .works nav {
+    margin: 4vw 4vw 2vw 1vw;
+  }
+
+  nav .items .item {
+    padding: 0.5% 1% 0.5% 1%;
+    line-height: 0.9rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0 2vw 0 0vw;
+    border: 1.5px solid #000000;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .mod-text {
+    font-weight: 500;
+    margin: 1vw;
+  }
+
+  .title {
+    font-size: 1rem;
+    margin-top: 5%;
+  }
+
+  .label {
+    font-size: 0.9rem;
+    color: grey;
+    margin-bottom: 5%;
+  }
+}
+
+/* Landscape Tablet */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .works nav {
+    margin: 4vw 4vw 2vw 1vw;
+  }
+
+  nav .items .item {
+    padding: 0.5% 1% 0.5% 1%;
+    line-height: 1vw;
+    font-size: 2vw;
+    font-weight: 400;
+    margin: 0 2vw 0 0vw;
+    border: 1.5px solid #000000;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .title {
+    font-size: 1rem;
+    margin-top: 5%;
+  }
+
+  .label {
+    font-size: 0.8rem;
+    color: grey;
+    margin-bottom: 5%;
+  }
+}
+
+/* Portrait Tablet and Large Phone */
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) and (orientation: portrait) {
+  .works nav {
+    margin: 5vw 4vw 4vw 1vw;
+  }
+
+  nav .items .item {
+    padding: 0.7% 1.4% 0.7% 1.24%;
+    line-height: 1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0 2vw 0 0vw;
+    border: 1.5px solid #000000;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .gallery {
+    display: flex;
+    margin-left: 1vw;
+    margin-right: 4vw;
+    flex-wrap: wrap;
+  }
+  .gallery .mod {
+    width: 45%;
+    /*   padding: 0.5vw; */
+    margin: 0 4% 4% 0;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: black;
+  }
+
+  .title {
+    font-size: 1rem;
+    margin-top: 5%;
+  }
+
+  .label {
+    font-size: 0.8rem;
+    color: grey;
+    margin-bottom: 5%;
+  }
+}
+
+/* Phone */
+
+@media only screen and (max-width: 600px) {
+  
+  .works {
+    overflow-y: scroll;
+  }
+  
+  .works nav {
+    margin: 4vh 0 4vh 50vw;
+    transform: translate(-50%, 0%);
+  }
+  
+  nav .items {
+    justify-content: center
+  }
+
+  nav .items .item {
+    padding: 1% 5% 1.5% 5%;
+    line-height: 1.2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 2vw 0 0vw;
+    border: 1.5px solid #000000;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .gallery {
+    justify-content: center;
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    flex-wrap: wrap;
+  }
+  .gallery .mod {
+    width: 90%;
+    /*   padding: 0.5vw; */
+/*     margin: 0 4% 4% 0; */
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: black;
+    margin: 0 0 3vh 0;
+  }
+  
+  .mod-text {
+  margin: 5vw;
+}
+
+  .title {
+    font-size: 1.2rem;
+    margin-top: 5%;
+  }
+
+  .label {
+    font-size: 1rem;
+    color: grey;
+    margin-bottom: 5%;
+  }
+}
