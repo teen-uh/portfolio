@@ -1,38 +1,31 @@
 Welcome to my code, not sure why you'd wanna see it.
 
+These are basically my notes for coding lol
 
-index: 
-add dropdown menu
+media queries for use:
 
-about:
-
-
-
-
-/* MONITOR */
+/_ MONITOR _/
 @media only screen and (min-width: 1200px) {
-  
+
 }
 
-/* LAPTOP */
+/_ LAPTOP _/
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  
+
 }
 
-/* Landscape Tablet */
+/_ Landscape Tablet _/
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  
-  
+
 }
 
-/* Portrait Tablet and Large Phone */
+/_ Portrait Tablet and Large Phone _/
 
 @media only screen and (min-width: 600px) and (max-width: 1200px) and (orientation: portrait) {
-  
+
 }
 
-/* Phone */
+/_ Phone _/
 @media only screen and (max-width: 600px) {
-  
-}
 
+}
