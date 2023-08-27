@@ -1,3 +1,7 @@
+body {
+  overflow-y: scroll;
+}
+
 nav .items {
   display: flex;
   /*   justify-content: space-between; */
@@ -20,6 +24,7 @@ nav .items .item:hover {
   width: 23%;
   /*   padding: 0.5vw; */
   margin-right: 2%;
+  margin-bottom: 2%;
   border-style: solid;
   border-width: 1.5px;
   border-color: black;

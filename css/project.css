@@ -1,6 +1,10 @@
   body {
     overflow: hidden;
   }
+
+  body::-webkit-scrollbar{
+    display: none;
+  }
   
 .project-header {
   display: flex;
@@ -44,7 +48,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  overflow: scroll;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.project-container::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
 }
 
 /* MONITOR */
@@ -103,7 +113,6 @@
   }
 
   .project-content {
-    overflow: scroll;
     width: 83.9vw;
     height: 200vh;
     z-index: -1;
@@ -158,7 +167,6 @@
   }
 
   .project-content {
-    overflow: scroll;
     width: 83.9vw;
     height: 200vh;
     z-index: -1;
@@ -225,7 +233,6 @@
   }
 
   .project-content {
-    overflow: scroll;
     width: 74vw;
     height: 200vh;
     z-index: -1;
@@ -292,7 +299,6 @@
   }
 
   .project-content {
-    overflow: scroll;
     width: 69vw;
     height: 200vh;
     z-index: -1;
@@ -362,7 +368,6 @@
   }
 
   .project-content {
-    overflow: scroll;
     width: 98vw;
     height: 200vh;
     z-index: -1;

@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scrollbar-width: none;
 }
 
 *,
@@ -21,18 +22,23 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 img,
 video {
   height: auto;
 }
-
+/* 
 div {
-/*   border-style: solid;
+  border-style: solid;
   border-width: 1px;
-  border-color: red; */
-}
+  border-color: red; 
+} */
 
 ul {
   list-style: none;

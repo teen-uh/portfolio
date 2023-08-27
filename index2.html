@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="bear.svg" />
+    <link rel="icon" href="assets/logo/favicon-w.ico" />
+    <link rel="stylesheet" href="https://use.typekit.net/rcy6ivr.css" />
+
+    <title>Tina Shi</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="css/swiper.css" />
+    <script src="js/swiper.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <!--     <div id="invertedcursor"></div> -->
+    <div class="sidebar">
+    
+
+  
+<label for="drop" class="toggle"><img
+              src="assets/logo/bearhead.png"
+              class="main-logo"
+            /></label>
+      <input type="checkbox" id="drop" />
+      <div class="sidebar-text">
+       
+        <ul class="dropdown-menu dropdown-menu--animated">
+          <li><a href="works.html" class="dropdown-link">Works</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main home swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="section0">
+          <a href="#" class="home-a" data-swiper-parallax="-400"
+            >Young Guns</a
+          >
+          <p class="home-p" data-swiper-parallax="-1200">
+            This is a description about Project Name. <br />
+            A project made with this medium that discusses this topic in
+            relation to these perspectives.
+          </p>
+        </div>
+        <div class="swiper-slide" id="section1">
+          <a href="#" class="home-a" data-swiper-parallax="-400"
+            >Embers</a
+          >
+          <p class="home-p" data-swiper-parallax="-1200">
+            This is a description about Project Name. <br />
+            A project made with this medium that discusses this topic in
+            relation to these perspectives.
+          </p>
+        </div>
+        <div class="swiper-slide" id="section2">
+          <a href="#" class="home-a" data-swiper-parallax="-400"
+            >Mama's Triptych</a
+          >
+          <p class="home-p" data-swiper-parallax="-1200">
+            This is a description about Project Name. <br />
+            A project made with this medium that discusses this topic in
+            relation to these perspectives.
+          </p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="mobile-footer">
+      <p>
+        Thanks for viewing! &nbsp; Learn more <a href="about.html">about me</a>.
+      </p>
+    </div>
+    
+    <div class="mobile-landscape">
+      <p>
+        Please rotate your device. 
+      </p>
+    </div>
+
+    <script>
+      function myFunction(x) {
+        if (x.matches) {
+          // If media query matches
+          var swiper = new Swiper(".swiper", {
+            direction: "horizontal",
+            loop: true,
+            parallax: true,
+            mousewheel: true,
+            touchStartPreventDefault: false,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        } else {
+          var swiper = new Swiper(".swiper", {
+            direction: "vertical",
+            loop: true,
+            parallax: true,
+            mousewheel: true,
+            touchStartPreventDefault: false,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        }
+      }
+
+      var x = window.matchMedia("(max-width: 600px)");
+      myFunction(x); // Call listener function at run time
+      x.addListener(myFunction); // Attach listener function on state changes
+    </script>
+  </body>
+</html>

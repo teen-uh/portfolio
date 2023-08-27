@@ -4,124 +4,31 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="bear.svg" />
-    <link
-      rel="icon"
-      href="https://cdn.glitch.global/d747b91a-0e7f-43da-9c0d-17dcc8b03d3a/favicon-w.ico?v=1652559992914"
-    />
-    <link rel="stylesheet" href="https://use.typekit.net/rcy6ivr.css" />
+    <link rel="icon" href="https://cdn.glitch.global/d747b91a-0e7f-43da-9c0d-17dcc8b03d3a/favicon-w.ico?v=1652559992914" />
+    <link rel="stylesheet" href="https://use.typekit.net/rcy6ivr.css">
 
     <title>Tina Shi</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <link rel="stylesheet" href="css/swiper.css" />
-    <script src="js/swiper.js"></script>
+    <!-- import the webpage's javascript file -->
+<!--     <script src="/script.js" defer></script> -->
+<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script> -->
     <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
   </head>
-  <body>
-    <!--     <div id="invertedcursor"></div> -->
-    <div class="sidebar">
-    
-
-  
-<label for="drop" class="toggle"><img
-              src="https://cdn.glitch.global/d747b91a-0e7f-43da-9c0d-17dcc8b03d3a/bearhead.png?v=1652232371510"
-              class="main-logo"
-            /></label>
-      <input type="checkbox" id="drop" />
-      <div class="sidebar-text">
+  <body style="margin: auto; text-align: center; padding: 30vh;">
        
-        <ul class="dropdown-menu dropdown-menu--animated">
-          <li><a href="works.html" class="dropdown-link">Works</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="main home swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" id="section0">
-          <a href="#" class="home-a" data-swiper-parallax="-400"
-            >Project Name</a
-          >
-          <p class="home-p" data-swiper-parallax="-1200">
-            This is a description about Project Name. <br />
-            A project made with this medium that discusses this topic in
-            relation to these perspectives.
-          </p>
-        </div>
-        <div class="swiper-slide" id="section1">
-          <a href="#" class="home-a" data-swiper-parallax="-400"
-            >Project Name</a
-          >
-          <p class="home-p" data-swiper-parallax="-1200">
-            This is a description about Project Name. <br />
-            A project made with this medium that discusses this topic in
-            relation to these perspectives.
-          </p>
-        </div>
-        <div class="swiper-slide" id="section2">
-          <a href="#" class="home-a" data-swiper-parallax="-400"
-            >Project Name</a
-          >
-          <p class="home-p" data-swiper-parallax="-1200">
-            This is a description about Project Name. <br />
-            A project made with this medium that discusses this topic in
-            relation to these perspectives.
-          </p>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-    <div class="mobile-footer">
-      <p>
-        Thanks for viewing! &nbsp; Learn more <a href="about.html">about me</a>.
-      </p>
-    </div>
-    
-    <div class="mobile-landscape">
-      <p>
-        Please rotate your device. 
-      </p>
-    </div>
-
-    <script>
-      function myFunction(x) {
-        if (x.matches) {
-          // If media query matches
-          var swiper = new Swiper(".swiper", {
-            direction: "horizontal",
-            loop: true,
-            parallax: true,
-            mousewheel: true,
-            touchStartPreventDefault: false,
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-          });
-        } else {
-          var swiper = new Swiper(".swiper", {
-            direction: "vertical",
-            loop: true,
-            parallax: true,
-            mousewheel: true,
-            touchStartPreventDefault: false,
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-          });
-        }
-      }
-
-      var x = window.matchMedia("(max-width: 600px)");
-      myFunction(x); // Call listener function at run time
-      x.addListener(myFunction); // Attach listener function on state changes
-    </script>
+          <img
+            src="assets/logo/bearhead.png"
+            class="main-logo"
+          />
+   
+        <h2 style="font-weight: 400;">
+          Thanks for visiting! <br> Unfortunately, this site is currently under contruction.
+        </h2>
+   
   </body>
 </html>
