@@ -6,6 +6,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+
 .project-header {
   display: flex;
   justify-content: flex-start;
@@ -109,25 +110,21 @@ body::-webkit-scrollbar {
   .project-container {
     width: 83.9vw;
     height: 71vh;
-  }
-
-  .project-container img {
-    max-width: 20%;
-    height: auto;
-    margin: 10vw;
-  }
-
-  .project-container iframe {
-    width: 90%;
-    max-width: 90%;
-    height: auto;
-    margin: auto;
+    padding: 4vw;
   }
 
   .project-content {
     width: 83.9vw;
     z-index: -1;
   }
+
+  .project-content img {
+    max-width: 20%;
+    height: auto;
+    margin: 10vw;
+  }
+
+
 }
 
 /* LAPTOP */

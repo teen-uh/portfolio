@@ -40,8 +40,12 @@ $(function() {
   
   var contentHeight =  $("#project-box").height() - $("#content-head").height();
   $("#content").css("height", contentHeight + "px");
-  
-  
+
+  var ifr = contentHeight - ($(window).width()*0.08);
+
+  $("iframe").css("height", ifr  + "px");
+  $("iframe").css("width", (ifr/9)*16  + "px");
+
   $("#middlebar").css("top", midLineHeight + "px");
   
   
