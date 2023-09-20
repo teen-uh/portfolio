@@ -16,7 +16,7 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  animation: fadeInAnimation ease 3s;
+  animation: bodyIn ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   width: 100vw;
@@ -57,34 +57,47 @@ p {
   margin: 0;
 }
 
-@keyframes fadeInAnimation {
+@keyframes bodyIn {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    backdrop-filter: blur(0px) brightness(100%);
+  }
+  100% {
+    opacity: 1;
+    backdrop-filter: blur(10px) brightness(90%);
   }
 }
 
 @keyframes fadeOutAnimation {
   0% {
     opacity: 1;
+    backdrop-filter: blur(10px) brightness(90%);
   }
   100% {
     opacity: 0;
+    backdrop-filter: blur(0px) brightness(100%);
   }
 }
 
 #section0 {
-  background-image: url("https://cdn.glitch.global/d747b91a-0e7f-43da-9c0d-17dcc8b03d3a/chak-2.jpg?v=1652557055604");
+  background-image: url("/assets/projects/ygs.png");
 }
 
 #section1 {
-  background-image: url("https://cdn.glitch.global/d747b91a-0e7f-43da-9c0d-17dcc8b03d3a/wahoo-2.jpeg?v=1652557937153");
+  background-image: url("/assets/projects/sTriptych.jpg");
 }
 
 #section2 {
-  background-image: url("https://cdn.glitch.global/d747b91a-0e7f-43da-9c0d-17dcc8b03d3a/dumplings-1.png?v=1652559148976");
+  background-image: url("/assets/projects/lny.png");
 }
 
 .swiper-slide {
@@ -231,7 +244,6 @@ input[type=checkbox] {
 } */
 
 
-
 /* MONITOR */
 @media only screen and (min-width: 1200px) {
   .main-logo {
@@ -246,33 +258,38 @@ input[type=checkbox] {
 
   .home p {
     position: absolute;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .home a {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
   
   .home-a {
   opacity: 0;
-    animation: fadeOutAnimation ease 1s;
+  backdrop-filter: blur(0px) brightness(100%);
+    animation: fadeOutAnimation ease 1.2s;
   }
 
   .home-p {
     opacity: 0;
+    backdrop-filter: blur(0px) brightness(100%);
     animation: fadeOutAnimation ease 1s;
   }
 
   .home:hover .home-a{
     animation: fadeInAnimation ease 1s;
     animation-fill-mode: forwards;
-
   }
 
   .home:hover .home-p{
     animation: fadeInAnimation ease 1s;
     animation-fill-mode: forwards;
+
+
+
   }
+
   
   .sidebar-text{
     font-size: 1.2rem;

@@ -34,6 +34,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
 }
 
+
 .border {
   position: absolute;
   background-color: black;
@@ -61,7 +62,20 @@ body::-webkit-scrollbar {
 
 .project-content {
   display: block;
-  overflow: auto;
+  overflow: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+p a {
+  text-decoration: underline;
+}
+
+iframe {
+  pointer-events: unset!important;
 }
 
 /* MONITOR */
@@ -111,18 +125,23 @@ body::-webkit-scrollbar {
   .project-container {
     width: 83.9vw;
     height: 71vh;
-    padding: 4vw;
   }
 
   .project-content {
     width: 83.9vw;
-    z-index: -1;
   }
 
+  .portrait {
+    height: 62vh;
+    width: auto;
+  }
+
+  .landscape {
+    height: 62vh;
+    width: auto;
+  }
   .project-content img {
-    max-width: 20%;
-    height: auto;
-    margin: 10vw;
+    margin: 4vw;
   }
 
   iframe {
@@ -171,19 +190,15 @@ body::-webkit-scrollbar {
 
   .project-container {
     width: 83.9vw;
-    padding: 4vw;
   }
 
-  .project-container img {
-    max-width: 20%;
-    height: auto;
-    margin: 10vw;
+  .project-content img {
+    margin: 4vw;
   }
 
   .project-content {
     width: 83.9vw;
     height: 200vh;
-    z-index: -1;
   }
 
   .left {
@@ -199,6 +214,16 @@ body::-webkit-scrollbar {
 
   iframe {
     max-width: 80vw;
+  }
+
+  .portrait {
+    height: 62vh;
+    width: auto;
+  }
+
+  .landscape {
+    height: 62vh;
+    width: auto;
   }
 }
 
@@ -254,7 +279,6 @@ body::-webkit-scrollbar {
   .project-content {
     width: 74vw;
     height: 200vh;
-    z-index: -1;
   }
 
   .left {
@@ -269,6 +293,16 @@ body::-webkit-scrollbar {
 
   iframe {
     max-width: 80vw;
+  }
+
+  .portrait {
+    height: 65vh;
+    width: auto;
+  }
+
+  .landscape {
+    height: 65vh;
+    width: auto;
   }
 }
 
@@ -325,7 +359,6 @@ body::-webkit-scrollbar {
   .project-content {
     width: 69vw;
     height: 200vh;
-    z-index: -1;
   }
 
   .left {
@@ -342,6 +375,16 @@ body::-webkit-scrollbar {
 
   iframe {
     max-width: 80vw;
+  }
+
+  .portrait {
+    height: 65vh;
+    width: auto;
+  }
+
+  .landscape {
+    height: 65vh;
+    width: auto;
   }
 }
 
@@ -392,15 +435,13 @@ body::-webkit-scrollbar {
   }
 
   .project-container img {
-    max-width: 20%;
-    height: auto;
-    margin: 10vw;
+    margin: 4vw;
   }
 
   .project-content {
     width: 96vw;
     height: fit-content;
-    z-index: -1;
+    flex-wrap: wrap;
   }
 
   .left {
@@ -417,5 +458,16 @@ body::-webkit-scrollbar {
   }
   iframe {
     margin: auto;
+  }
+
+  .portrait {
+    height: 50vh;
+    width: auto;
+  }
+
+
+  .landscape {
+    width: 90vw;
+    height: auto;
   }
 }

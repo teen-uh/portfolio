@@ -86,10 +86,10 @@ $(function() {
         $("#bottombar").animate({width: vw + "vw"},800, function() {
           $("#leftbar").show();
           $("#leftbar").animate({height: x + "px"},900, function() {
-            $("#content-head").fadeIn(1300);
-            $("#content").fadeIn(1300);
             $("#middlebar").show();
             $("#middlebar").animate({width: vw + "vw"},1000, function() {
+            $("#content-head").fadeIn(1000);
+            $("#content").fadeIn(1000);
             });
           });
         });

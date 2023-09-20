@@ -7,7 +7,7 @@ $.fn.homeSlide = function(){
       $(".home-a").each(function () {
         //loop through each element with the .dynamic-height class
         $(this).css({
-          top: $(document).height() * 0.45 - $(this).height() / 2 + "px",
+          top: $(document).height() * 0.48 - $(this).height() / 2 + "px",
           left: $(document).width() * 0.425 - $(this).width() / 2 + "px", //adjust the css rule for margin-top to equal the element height - 10px and add the measurement unit "px" for valid CSS
         });
       });
@@ -15,7 +15,7 @@ $.fn.homeSlide = function(){
       $(".home-p").each(function () {
         //loop through each element with the .dynamic-height class
         $(this).css({
-          top: $(document).height() * 0.55 - $(this).height() / 2 + "px",
+          top: $(document).height() * 0.53 - $(this).height() / 2 + "px",
           left: $(document).width() * 0.425 - $(this).width() / 2 + "px", //adjust the css rule for margin-top to equal the element height - 10px and add the measurement unit "px" for valid CSS
         });
       });
@@ -26,7 +26,7 @@ $.fn.homeSlide = function(){
       $(".home-a").each(function () {
         //loop through each element with the .dynamic-height class
         $(this).css({
-          top: $(document).height() * 0.5 - $(this).height() / 2 + "px",
+          top: $(document).height() * 0.48 - $(this).height() / 2 + "px",
           left: $(document).width() * 0.375 - $(this).width() / 2 + "px", //adjust the css rule for margin-top to equal the element height - 10px and add the measurement unit "px" for valid CSS
         });
       });
@@ -34,7 +34,7 @@ $.fn.homeSlide = function(){
       $(".home-p").each(function () {
         //loop through each element with the .dynamic-height class
         $(this).css({
-          top: $(document).height() * 0.55 - $(this).height() / 2 + "px",
+          top: $(document).height() * 0.52 - $(this).height() / 2 + "px",
           left: $(document).width() * 0.375 - $(this).width() / 2 + "px", //adjust the css rule for margin-top to equal the element height - 10px and add the measurement unit "px" for valid CSS
         });
       });
@@ -54,7 +54,7 @@ $.fn.homeSlide = function(){
       $(".home-p").each(function () {
         //loop through each element with the .dynamic-height class
         $(this).css({
-          top: $(document).height() * 0.55 - $(this).height() / 2 + "px",
+          top: $(document).height() * 0.50 - $(this).height() / 2 + "px",
           left: $(document).width() * 0.35 - $(this).width() / 2 + "px", //adjust the css rule for margin-top to equal the element height - 10px and add the measurement unit "px" for valid CSS
         });
       });
