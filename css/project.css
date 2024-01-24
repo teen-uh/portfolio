@@ -137,9 +137,20 @@ iframe {
   }
 
   .landscape {
-    height: 62vh;
-    width: auto;
+    width: 75vw;
+    height: auto;
   }
+
+  .square {
+    width: 45vw;
+    height: auto;
+  }
+
+  .small-l {
+    width: 20vw;
+    height: auto;
+  }
+
   .project-content img {
     margin: 4vw;
   }
@@ -222,8 +233,18 @@ iframe {
   }
 
   .landscape {
-    height: 62vh;
-    width: auto;
+    width: 75vw;
+    height: auto;
+  }
+
+  .square {
+    width: 45vw;
+    height: auto;
+  }
+
+  .small-l {
+    width: 20vw;
+    height: auto;
   }
 }
 
@@ -301,8 +322,18 @@ iframe {
   }
 
   .landscape {
-    height: 65vh;
-    width: auto;
+    width: 65vw;
+    height: auto;
+  }
+
+  .square {
+    width: 40vw;
+    height: auto;
+  }
+
+  .small-l {
+    width: 20vw;
+    height: auto;
   }
 }
 
@@ -383,8 +414,18 @@ iframe {
   }
 
   .landscape {
-    height: 65vh;
-    width: auto;
+    width: 60vw;
+    height: auto;
+  }
+
+  .square {
+    width: 35vw;
+    height: auto;
+  }
+
+  .small-l {
+    width: 15vw;
+    height: auto;
   }
 }
 
@@ -465,9 +506,18 @@ iframe {
     width: auto;
   }
 
-
   .landscape {
     width: 90vw;
+    height: auto;
+  }
+
+  .square {
+    width: 75vw;
+    height: auto;
+  }
+
+  .small-l {
+    width: 50vw;
     height: auto;
   }
 }
